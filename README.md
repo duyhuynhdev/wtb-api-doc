@@ -204,7 +204,7 @@
 
 ---
 
-## `/api/blockchain/job`
+## `/api/blockchain/job/complete`
 
 ### PATCH
 
@@ -372,7 +372,7 @@
 
 ### `/api/blockchain/turbine/{turbine_id}`
 
-#### PATCH
+#### PUT
 
 **Summary**: Update turbine information
 
@@ -382,8 +382,26 @@
 {
   "turbine_id": "TURB-0001",
   "turbine_serial_number": "VESTAS-112-2020-0009",
+  "wind_farm_name": "South Ridge Wind Farm",
+  "organisation_id": "ORG-001",
+  "turbine_model": "Vestas V112",
   "manufacturer": "Vestas",
   "number_of_blades": 3,
+  "blade_length_m": 55,
+  "estimated_blade_weight_kg_each": 9000,
+  "installation_date": "2020-03-15",
+  "expected_end_of_life_date": "2040-03-15",
+  "planned_decommission_date": "2039-12-31",
+  "wind_farm_address": "123 Windmill Rd, Warrnambool, VIC",
+  "state": "VIC",
+  "postcode": "3280",
+  "site_zone": "North Section",
+  "turbine_location_description": "Near Ridge Road",
+  "latitude": -38.383,
+  "longitude": 142.487,
+  "site_accessibility": "Limited",
+  "operational_status": "Operational",
+  "last_updated": "2025-07-21T10:00:00Z"
 }
 ```
 
